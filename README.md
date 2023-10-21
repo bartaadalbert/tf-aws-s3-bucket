@@ -17,7 +17,6 @@ module "s3_bucket" {
   AWS_PROFILE     = "default"
   bucket_name     = "my-unique-bucket-name"
   bucket_environment = "production"
-  bucket_acl      = "private"
 }
 
 ```
@@ -40,8 +39,6 @@ Replace `<YOUR_GITHUB_USERNAME>` with your GitHub username, and adjust the other
 |------|-------------|
 | bucket_name | The name of the created S3 bucket. |
 | bucket_arn | The Amazon Resource Name (ARN) of the S3 bucket. |
-| bucket_website_url | The website endpoint URL of the S3 bucket (if configured as a website). |
-| bucket_acl | The Access Control List (ACL) set for the S3 bucket. |
 | bucket_region | The AWS region where the S3 bucket is located. |
 
 ## Contributions
